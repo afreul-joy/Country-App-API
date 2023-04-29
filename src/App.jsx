@@ -6,6 +6,7 @@ import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Meals from "./Pages/Meals/Meals";
 import Countries from "./Pages/Countries/Countries";
+import CountryDetails from "./Pages/Countries/CountryDetails/CountryDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/meals" element={<Meals></Meals>}></Route>
         <Route path="/countries" element={<Countries></Countries>}></Route>
+        <Route path="/countries/:ccn3" element={<CountryDetails></CountryDetails>}></Route>
       </Routes>
     </>
   );
